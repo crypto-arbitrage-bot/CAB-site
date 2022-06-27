@@ -3,8 +3,8 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.listen( process.env.PORT || 5000, () => {
-  console.log(`server up on http://localhost:${process.env.PORT || 5000}`);
+app.listen( PORT, () => {
+  console.log(`server up on http://localhost:${PORT}`);
 })
 
 app.get( '/', (req, res) => {
