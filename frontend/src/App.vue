@@ -59,12 +59,6 @@ a {
 
 </style>
 
-<style scoped>
-#content {
-  /* height: 100vh; */
-  /* width: 100vw; */
-}
-</style>
 <script>
 export default {
   components: {
