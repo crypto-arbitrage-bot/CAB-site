@@ -8,7 +8,7 @@ app.listen( PORT, () => {
 })
 
 app.get( '/', (req, res) => {
-  res.send('hi');
+  res.send('CAB Version API v1.0');
 })
 
 
