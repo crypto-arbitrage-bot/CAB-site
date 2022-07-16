@@ -20,8 +20,13 @@ import NavBar from '@/components/NavBar.vue'
 #app {
   /* max-width: 1280px; */
   width: 100%;
+  /* height: 100%; */
+  height: 100vh;
   /* margin: 0 auto;
   padding: 2rem; */
+  background-image: url("@/assets/bg.jpg");
+  background-position: center;
+  background-size: cover;
 
   font-weight: normal;
 }
