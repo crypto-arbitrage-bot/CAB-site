@@ -1,4 +1,5 @@
 <script setup>
+
 </script>
 
 <template>
@@ -10,7 +11,9 @@
       text="secondary"
       elevation="24"
     >
+    <RouterLink to="/install">
       Get Started
+    </RouterLink>
     </v-btn>
   </main>
 </template>
