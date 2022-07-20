@@ -1,30 +1,62 @@
 <template>
     <nav id="nav">
-        <RouterLink to="/"><img src="@/assets/logo.png" alt="CAB logo" id="logo" ref="Home"></RouterLink>
+        <RouterLink to="/" @click="makeActive('home')" :class="{ 'active': isActive('home') }"><img src="@/assets/logo.png" alt="CAB logo" id="logo" ref="Home"></RouterLink>
         <ul id="links">
-            <li ref="About">
+            <li ref="About" :class="{ 'active': isActive('about') }">
                 <h1>
-                    <RouterLink to="/about">About</RouterLink>
+                    <RouterLink to="/about" @click="makeActive('about')">About</RouterLink>
                 </h1>
             </li>
-            <li ref="Install">
+            <li ref="Install" :class="{ 'active': isActive('install') }">
                 <h1>
-                    <RouterLink to="/install">Install</RouterLink>
+                    <RouterLink to="/install" @click="makeActive('install')">Install</RouterLink>
                 </h1>
             </li>
-            <li ref="Contact">
+            <li ref="Contact" :class="{ 'active': isActive('contact') }">
                 <h1>
-                    <RouterLink to="/contact">Contact</RouterLink>
+                    <RouterLink to="/contact" @click="makeActive('contact')">Contact</RouterLink>
                 </h1>
             </li>
-            <li ref="Contact">
+            <li ref="GitHub">
                 <h1><a href="https://github.com/crypto-arbitrage-bot">GitHub</a></h1>
             </li>
         </ul>
     </nav>
 </template>
 
+<script>
+export default {
+    data() {
+        return {
+            active: 'home',
+        };
+    },
+    watch: {
+        '$route': 'update',
+    },
+    methods: {
+        makeActive( item) {
+            this.active = item;
+        },
+        isActive( name ) {
+            return this.active == name;
+        },
+        debug( item ) {
+            console.log( this.isActive( item ) );
+        },
+        update( route ) {
+            console.log(route)
+            this.makeActive( route.name );
+        }
+    }
+}
+</script>
+
 <style scoped>
+.active * {
+    color: #F9F871;
+}
+
 #links li {
     padding-right: 20px;
 }
