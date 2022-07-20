@@ -4,7 +4,7 @@
     <div class="content">
     <div class="left">
       <h1>Crypto Arbitrage Bot (CAB)</h1>
-      <div>
+      <div class="desc">
         CAB is a Python program that can detect arbitrage and output a router for it. The router consists of multiple buy and sell processes from different exchanges. Users have the choice to follow the instructions and execute transactions, generating potential profit. Its features include:
         <ul>
           <li>The Arbitrage Strategy Computation</li>
@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="right">
-      <h2>Developers</h2>
+      <h1>Developers</h1>
       <table id="members">
         <tbody>
           <tr>
@@ -59,6 +59,8 @@
 .about {
   display: flex;
   flex-direction: column;
+  width: fit-content;
+  /* margin: 0 auto; */
 }
 
 .about h1 {
@@ -69,7 +71,10 @@
 .content {
   display: flex;
 }
-.content * {
+.content div {
+  margin: 5%;
+}
+.desc ul {
   margin: 5%;
 }
 .content .left {

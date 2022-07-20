@@ -45,16 +45,19 @@ a {
   transition: 0.4s;
 }
 
-/* a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-} */
+a {
+  box-sizing: border-box;
+  padding: 5px;
+}
+
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+
+    border-radius: 15px;
+    /* background-color: hsla(160, 100%, 37%, 0.2); */
+    background-color: #b3bd5877;
+;
   }
 }
 
