@@ -5,14 +5,6 @@ import 'vuetify/styles'
 // Vuetify
 import { createVuetify } from 'vuetify'
 
-// const mainTheme = {
-//   dark: true,
-//   colors: {
-//     primary: '#275FFE',
-//     secondary: '#D9D9D9',
-//     accent: '#F9F871',
-//   }
-// }
 
 export default createVuetify({
   // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
@@ -23,7 +15,7 @@ export default createVuetify({
         dark: true,
         colors: {
           primary: '#275FFE',
-          secondary: '#D9D9D9',
+          secondary: '#FFFFFF',
           accent: '#F9F871',
         }
       }

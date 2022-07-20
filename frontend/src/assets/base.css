@@ -18,7 +18,7 @@
   --vt-c-text-light-1: var(--vt-c-indigo);
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  --vt-c-text-dark-2: #ffffff;
 }
 
 /* semantic color variables for this project */
@@ -57,9 +57,20 @@
   margin: 0;
   position: relative;
   font-weight: normal;
+
+}
+
+
+body::-webkit-scrollbar {
+  /* disable scrollbar */
+  display: none;
 }
 
 body {
+  /* disable scrollbar */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
   min-height: 100vh;
   color: var(--color-text);
   background: var(--color-background);
