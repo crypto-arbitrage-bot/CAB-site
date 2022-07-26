@@ -1,16 +1,23 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import NavBar from '@/components/NavBar.vue'
+import { RouterView } from 'vue-router';
+import NavBar from '@/components/NavBar.vue';
 </script>
 
 <template>
-<div id="content">
-  <NavBar></NavBar>
+  <div id="content">
+    <NavBar></NavBar>
 
-  <RouterView></RouterView>
-</div>
-
+    <RouterView></RouterView>
+  </div>
 </template>
+
+<script>
+export default {
+  components: {
+    NavBar,
+  },
+};
+</script>
 
 <style>
 @import '@/assets/base.css';
@@ -18,7 +25,7 @@ import NavBar from '@/components/NavBar.vue'
 #app {
   width: 100%;
   height: 100vh;
-  background-image: url("@/assets/bg.jpg");
+  background-image: url('@/assets/bg.jpg');
   background-position: center;
   background-size: cover;
   font-weight: normal;
@@ -37,7 +44,7 @@ header {
 
 a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   transition: 0.4s;
 }
 
@@ -46,24 +53,11 @@ a {
   padding: 5px;
 }
 
-
 @media (hover: hover) {
   a:hover {
-
     border-radius: 15px;
     /* background-color: hsla(160, 100%, 37%, 0.2); */
     background-color: #b3bd5877;
-;
   }
 }
-
-
 </style>
-
-<script>
-export default {
-  components: {
-    NavBar
-  }
-}
-</script>

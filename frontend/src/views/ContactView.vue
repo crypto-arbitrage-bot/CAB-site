@@ -3,22 +3,21 @@
     <h1 class="center">Contact us!</h1>
     <div id="email-box">
       <h2>Send us an email</h2>
-      <input id="name" placeholder="Full name"/>
-      <input id="email" placeholder="Email address"/>
-      <input id="subject" placeholder="Subject"/>
+      <input id="name" placeholder="Full name" />
+      <input id="email" placeholder="Email address" />
+      <input id="subject" placeholder="Subject" />
       <label for="message">Message body</label>
       <v-textarea id="message"></v-textarea>
 
       <v-btn>Send Email</v-btn>
     </div>
-
   </div>
 </template>
 
 <style scoped>
 h1 {
   font-weight: bold;
-} 
+}
 .center {
   margin: 0 auto;
 }
@@ -40,7 +39,10 @@ h1 {
   margin: 0 auto;
 }
 
-#name,#email,#subject,#message {
+#name,
+#email,
+#subject,
+#message {
   width: 25vw;
   /* padding-top: 5%; */
   margin-top: 5px;
@@ -49,6 +51,4 @@ h1 {
   box-sizing: border-box;
   padding: 5px;
 }
-
-
 </style>

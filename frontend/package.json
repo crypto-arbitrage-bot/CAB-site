@@ -5,7 +5,8 @@
     "serve": "vite preview",
     "build": "vite build",
     "dev": "vite --open",
-    "preview": "vite preview --port 4173"
+    "preview": "vite preview --port 4173",
+    "lint": "eslint src --fix"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
@@ -17,8 +18,15 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.3",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.3.0",
+    "prettier": "^2.7.1",
     "vite": "^2.9.12",
+    "vite-plugin-eslint": "^1.7.0",
     "vite-plugin-vuetify": "^1.0.0-alpha.0",
-    "vue-cli-plugin-vuetify": "~2.5.1"
+    "vue-cli-plugin-vuetify": "~2.5.1",
+    "vue-eslint-parser": "^9.0.3"
   }
 }
