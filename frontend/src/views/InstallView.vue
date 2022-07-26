@@ -3,7 +3,8 @@
     <div class="text-content">
       <h1>Install Instructions</h1>
 
-      <h1>Install instructions here, video to the right.</h1>
+      <p>To view the install instructions in text, visit the repository: </p>
+      <a href="https://github.com/crypto-arbitrage-bot/CAB/blob/main/README.md">https://github.com/crypto-arbitrage-bot/CAB/blob/main/README.md</a>
 
       <v-btn
         color="primary" 
