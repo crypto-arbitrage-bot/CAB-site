@@ -13,5 +13,5 @@ app.get( '/', (req, res) => {
 
 
 app.get( '/version', (req, res) => {
-  res.status(200).json({version: 0.5.1 });
+  res.json({version: "0.5.1" });
 })
