@@ -18,7 +18,7 @@
           </ul>
         </div>
       </div>
-      <div class="right">
+      <div class="right" style="margin: 5% auto;">
         <h1>Developers</h1>
         <table id="members">
           <tbody>
@@ -62,7 +62,7 @@
   display: flex;
   flex-direction: column;
   width: fit-content;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 .about h1 {
