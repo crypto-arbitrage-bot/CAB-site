@@ -28,27 +28,27 @@
             </tr>
             <tr>
               <td class="name">Ketu Patel</td>
-              <td class="role">Product Owner & Python Developer</td>
+              <td class="role">Product Owner</td>
             </tr>
             <tr>
               <td class="name">Bhavesh Bajaj</td>
-              <td class="role">Python Developer</td>
+              <td class="role">Developer</td>
             </tr>
             <tr>
               <td class="name">James Liu</td>
-              <td class="role">Full Stack Developer</td>
+              <td class="role">Developer</td>
             </tr>
             <tr>
               <td class="name">Zhongbang Chen</td>
-              <td class="role">Documentation</td>
+              <td class="role">Developer</td>
             </tr>
             <tr>
               <td class="name">Suyu Yang</td>
-              <td class="role">Documentation</td>
+              <td class="role">Developer</td>
             </tr>
             <tr>
               <td class="name">Sriharsha Tangellamudi</td>
-              <td class="role">Documentation</td>
+              <td class="role">Developer</td>
             </tr>
           </tbody>
         </table>
